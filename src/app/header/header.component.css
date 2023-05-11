@@ -1,0 +1,21 @@
+nav img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+nav {
+    background-color: brown;
+}
+
+nav ul{
+    float: right;
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+}

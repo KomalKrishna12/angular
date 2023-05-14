@@ -8,6 +8,7 @@ import { User3Component } from './user3/user3.component';
 import { User4Component } from './user4/user4.component';
 import { UserAuthModule } from './user-auth/user-auth.module';
 import { HeaderComponent } from './header/header.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     BrowserModule,
-    UserAuthModule
+    UserAuthModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

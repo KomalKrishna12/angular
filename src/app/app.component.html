@@ -1,4 +1,25 @@
 <app-header></app-header>
+<br>
+<br>
+
+<button (click)="toggle()">Toggle</button>
+
+<h1 *ngIf="flag">Hello there</h1>
+<br>
+<br>
+
+<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+    <input ngModel name="name" type="text" placeholder="Enter name">
+    <br><br>
+    <input ngModel name="email" type="email" placeholder="Enter email">
+    <br><br>
+    <input ngModel name="pass" type="password" placeholder="Enter password">
+    <br><br>
+    <button>Submit</button>
+</form>
+
+<br>
+<br>
 <h1>Hello {{title}}</h1>
 <!-- <app-user></app-user> -->
 
@@ -48,11 +69,10 @@
 <!-- for loop -->
 
 <!-- <ul *ngFor="let user of users">{{user}}</ul> -->
- 
+
 <ul *ngFor="let detail of user_details">
     <li>{{detail.name}}</li>
     <li>{{detail.age}}</li>
 </ul>
 
 <!-- <h1 [style.color]="color">Style binding</h1> -->
-

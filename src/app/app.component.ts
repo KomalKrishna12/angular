@@ -11,6 +11,16 @@ export class AppComponent {
     return "demo from function";
   }
 
+  flag = false;
+
+  toggle() {
+    this.flag = !this.flag;
+  }
+
+  getData(data: any) {
+    console.log(data);
+  }
+
   data: string = "Hello jiii";
 
   btnFun(str: string) {
@@ -41,17 +51,17 @@ export class AppComponent {
     {
       name: "Komal",
       age: "23",
-      marks:['10','20','30']
+      marks: ['10', '20', '30']
     },
     {
       name: "Anurag",
       age: "22",
-      marks:['10','20','30']
+      marks: ['10', '20', '30']
     },
     {
       name: "Raj",
       age: "22",
-      marks:['10','20','30']
+      marks: ['10', '20', '30']
     }
   ];
 }

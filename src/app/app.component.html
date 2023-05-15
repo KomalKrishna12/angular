@@ -2,7 +2,13 @@
 <br>
 <br>
 
-<button (click)="toggle()">Toggle</button>
+<!-- <app-bootstrap-demo></app-bootstrap-demo>
+
+<app-material-ui-demo></app-material-ui-demo> -->
+
+<app-todo-list [item]="title" [item2]="'Hello'"></app-todo-list>
+
+<!-- <button (click)="toggle()">Toggle</button>
 
 <h1 *ngIf="flag">Hello there</h1>
 <br>
@@ -20,25 +26,25 @@
 
 <br>
 <br>
-<h1>Hello {{title}}</h1>
+<h1>Hello {{title}}</h1> -->
 <!-- <app-user></app-user> -->
 
 <!-- interpolation -->
-<input #uname type="text" name="username" value={{data}}>
+<!-- <input #uname type="text" name="username" value={{data}}>
 <button (click)="btnFun(uname.value)">click</button>
 
 <br>
-<br>
+<br> -->
 
 
 <!-- data binding -->
-<input type="text" name="username2" [value]=data>
+<!-- <input type="text" name="username2" [value]=data>
 
 <br>
-<br>
+<br> -->
 
 <!-- if show is true then it print hello else it pring data of else block -->
-<h1 *ngIf="show=='yes'; then ifblockid else elseblockid">Hello</h1>
+<!-- <h1 *ngIf="show=='yes'; then ifblockid else elseblockid">Hello</h1>
 
 <ng-template #ifblockid>
     <h1>inside if block</h1>
@@ -46,16 +52,16 @@
 
 <ng-template #elseblockid>
     <h1>this is inside else block</h1>
-</ng-template>
+</ng-template> -->
 
 <!-- nested if else -->
-<ng-template [ngIf]="color==='red'">
+<!-- <ng-template [ngIf]="color==='red'">
     <h1 style="color:red">Red color</h1>
 </ng-template>
 
 <ng-template [ngIf]="color==='green'">
     <h1 style="color:green">Green color</h1>
-</ng-template>
+</ng-template> -->
 
 <!-- switch -->
 
@@ -70,9 +76,9 @@
 
 <!-- <ul *ngFor="let user of users">{{user}}</ul> -->
 
-<ul *ngFor="let detail of user_details">
+<!-- <ul *ngFor="let detail of user_details">
     <li>{{detail.name}}</li>
     <li>{{detail.age}}</li>
 </ul>
 
-<!-- <h1 [style.color]="color">Style binding</h1> -->
+<h1 [style.color]="color">Style binding</h1> -->

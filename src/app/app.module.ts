@@ -9,6 +9,13 @@ import { User4Component } from './user4/user4.component';
 import { UserAuthModule } from './user-auth/user-auth.module';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BootstrapDemoComponent } from './bootstrap-demo/bootstrap-demo.component';
+import { MaterialUiDemoComponent } from './material-ui-demo/material-ui-demo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonModule } from '@angular/material/button';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +24,19 @@ import { FormsModule } from '@angular/forms';
     User2Component,
     User3Component,
     User4Component,
-    HeaderComponent
+    HeaderComponent,
+    BootstrapDemoComponent,
+    MaterialUiDemoComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,
     UserAuthModule,
-    FormsModule
+    FormsModule,
+    NgbModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

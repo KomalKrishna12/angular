@@ -1,0 +1,9 @@
+<h1 style="margin:20px">{{title}}</h1>
+
+<form #formId="ngForm" (ngSubmit)="loginForm(formId.value)">
+    <input style="width:70%; margin:10px" type="text" placeholder="Enter your name" ngModel name="uname"/>
+    <input style="width:70%; margin:10px" type="email" placeholder="Enter your email" ngModel name="uemail"/>
+    <input style="width:70%; margin:10px" type="password" placeholder="Enter your password" ngModel name="upass"/>
+    <br><br>
+    <button style="margin-left:50px">submit</button>
+</form>

@@ -16,6 +16,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { FormComponent } from './form/form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     HeaderComponent,
     BootstrapDemoComponent,
     MaterialUiDemoComponent,
-    TodoListComponent
+    TodoListComponent,
+    FormComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,8 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     NgbModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    MatButtonModule
+    MatButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,6 +19,7 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { YellowEleDirective } from './yellow-ele.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MaterialUiDemoComponent,
     TodoListComponent,
     FormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    YellowEleDirective
   ],
   imports: [
     BrowserModule,

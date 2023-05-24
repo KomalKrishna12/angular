@@ -5,3 +5,9 @@
 
 <a routerLink="company">About company</a><br><br>
 <a routerLink="me">About me</a><br><br>
+
+<h1>
+    <ul *ngFor="let user of users">
+        <li>{{user.name}}</li>
+    </ul>
+</h1>

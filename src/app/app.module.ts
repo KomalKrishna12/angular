@@ -8,6 +8,9 @@ import { AboutComponent } from './components/about/about.component';
 import { NoPageComponent } from './components/no-page/no-page.component';
 import { AboutCompanyComponent } from './components/about-company/about-company.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
     AboutComponent,
     NoPageComponent,
     AboutCompanyComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

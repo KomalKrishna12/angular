@@ -6,4 +6,23 @@
 <!-- Dynamic routing : pass data using routingLink -->
 <a routerLink="about/10">About</a>
 <app-header></app-header>
-<app-footer></app-footer>
+
+<hr>
+<!-- call api for getting users -->
+<h1>Calling API using GET method</h1>
+<h2 *ngFor="let user of users">{{user.name}} -- {{user.age}}</h2>
+<hr>
+
+<!-- creating for api using POST method -->
+<h1>Calling API using POST method with some data</h1>
+<form #formid="ngForm" (ngSubmit)="createuser(formid.value)">
+    <input type="text" ngModel name="name" placeholder="Enter name"><br><br>
+    <input type="number" ngModel name="age" placeholder="Enter age"><br><br>
+    <button>create</button>
+</form>
+<hr>
+
+<h1>User using Model interface : {{demouser.id}} -- {{demouser.name}} -- {{demouser.age}}</h1>
+<hr>
+
+<!-- <app-footer></app-footer> -->

@@ -12,4 +12,8 @@ url:any = "http://localhost:3000/users";
   getUsers(){
     return this.http.get(this.url);
   }
+
+  createUser(data:any){
+    return this.http.post(this.url, data);
+  }
 }

@@ -13,6 +13,7 @@ export class AboutComponent {
   constructor(private route: ActivatedRoute, private userdata: UserdataService) {
     console.log(userdata.users);
     this.users = userdata.users;
+console.warn("About compoent loaded");
 
   }
 

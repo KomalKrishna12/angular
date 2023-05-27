@@ -7,28 +7,28 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { AboutCompanyComponent } from './components/about-company/about-company.component';
 
 const routes: Routes = [
-  {
-    path: "",
-    component: HomeComponent
-  },
-  {
-    path: "about/:id",
-    component: AboutComponent,
-    children: [
-      {
-        path: "company",
-        component: AboutCompanyComponent
-      },
-      {
-        path: "me",
-        component: AboutMeComponent
-      }
-    ]
-  },
-  { // this will handle invalid urls
-    path: "**",
-    component: NoPageComponent
-  }
+  // {
+  //   path: "",
+  //   component: HomeComponent
+  // },
+  // {
+  //   path: "about/:id",
+  //   component: AboutComponent,
+  //   children: [
+  //     {
+  //       path: "company",
+  //       component: AboutCompanyComponent
+  //     },
+  //     {
+  //       path: "me",
+  //       component: AboutMeComponent
+  //     }
+  //   ]
+  // },
+  // { // this will handle invalid urls
+  //   path: "**",
+  //   component: NoPageComponent
+  // }
 ];
 
 @NgModule({
